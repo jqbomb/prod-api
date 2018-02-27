@@ -1,0 +1,15 @@
+{
+  "name": "prod-api",
+  "version": "1.0.0",
+  "description": "Datastore Product API",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/datastore": "^1.3.4",
+    "express": "^4.16.2"
+  }
+}
