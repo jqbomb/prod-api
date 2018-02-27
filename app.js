@@ -1,6 +1,7 @@
 const Datastore = require('@google-cloud/datastore');
 const express = require('express');
 const bodyParser = require('body-parser');
+var cors = require('cors');
 
 const projectId = 'webstore-194800';
 
@@ -12,7 +13,7 @@ const datastore = new Datastore({
 });
 
 const api = express();
-
+api.use(cors());
 
 //Get product by name
 api.get('/getProdByName/:name', async (req, res) => {
